@@ -1,11 +1,11 @@
 package com.jacky.builder;
 
 /**
- * BuilderÄ£Ê½£¨¹¹½¨ÕßÄ£Ê½£©--AndroidÖĞµÄÁ´Ê½µ÷ÓÃÓÉ´Ë¶øÀ´
+ * Builderæ¨¡å¼ï¼ˆæ„å»ºè€…æ¨¡å¼ï¼‰--Androidä¸­çš„é“¾å¼è°ƒç”¨ç”±æ­¤è€Œæ¥
  * @author Jacky-PC
- * Í¨¹ıÆäËüÀàÀ´·½±ãµÄ´´½¨ĞèÒªµÄÊµÀı
- * 1.ÀàµÄ¹¹Ôì·½·¨Ë½ÓĞ»¯£¬²»ÄÜÖ±½Ónew³öÊµÀı
- * 2.´´½¨Ò»¸ö¾²Ì¬µÄBuilderÄÚ²¿Àà£¬ÀïÃæ´´½¨Ò»¸öbuild·½·¨·µ»Ø¶ÔÓ¦µÄÊµÀı
+ * é€šè¿‡å…¶å®ƒç±»æ¥æ–¹ä¾¿çš„åˆ›å»ºéœ€è¦çš„å®ä¾‹
+ * 1.ç±»çš„æ„é€ æ–¹æ³•ç§æœ‰åŒ–ï¼Œä¸èƒ½ç›´æ¥newå‡ºå®ä¾‹
+ * 2.åˆ›å»ºä¸€ä¸ªé™æ€çš„Builderå†…éƒ¨ç±»ï¼Œé‡Œé¢åˆ›å»ºä¸€ä¸ªbuildæ–¹æ³•è¿”å›å¯¹åº”çš„å®ä¾‹
  */
 public class Person {
 	private String name;
@@ -50,7 +50,7 @@ public class Person {
 	
 	public static void main(String[] args) {
 		System.out.println(new Person.Builder()
-				.name("ÕÅÈı")
+				.name("å¼ ä¸‰")
 				.age(1)
 				.sex(2)
 				.build()
