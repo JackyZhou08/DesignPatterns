@@ -23,6 +23,12 @@ public class Person {
 		return "name="+name+"\nage="+age+"\nsex="+sex;
 	}
 	
+	
+	/**
+	 * 可以将Person必须要的属性放在Builder的构造方法中
+	 * @author Jacky-PC
+	 *
+	 */
 	static class Builder{
 		private String name;
 		private int age;
