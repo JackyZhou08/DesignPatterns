@@ -11,12 +11,12 @@ import com.jacky.factory.simplefacotory.ShapeFactory;
 
 /**
  * 1.简单工厂模式
- * 专门定义一个类来创建其他类的实例，被创建的实例通常都具有共同的父类
+ * 专门定义一个类来创建其他类的实例，被创建的实例通常都具有共同的父类（一个工厂创建多种产品）
  * 
- * 2.工厂方法模式
- * 定义一个用来创建对象的接口，让子类来决定要实例化哪一个类，使一个类的实例化来延迟到子类
+ * 2.工厂方法模式（一种类型，多种产品）
+ * 定义一个用来创建对象的接口，让子类来决定要实例化哪一个类，使一个类的实例化来延迟到子类（多个工厂，每个工厂只创建一种产品）
  * 
- * 3.抽象工厂模式
+ * 3.抽象工厂模式（多种类型，多种产品）
  * 提供一个创建一系列相关或者相互依赖的对象接口，而无需指定他们具体的类
  * 当产品类型只有一种的时候，抽象工厂模式变为工厂方法模式；当产品类型有多种的时候，工厂方法模式变为抽象工厂模式。
  * 
@@ -40,7 +40,7 @@ public class Test {
 		ShapeFactory.createShape("square").draw();
 		
 		System.out.println("工厂方法模式：");
-		IShapeFactory shapeFactory = null;
+		IShapeFactory shapeFactory = null;//一个接口，里面只有一个方法
 		shapeFactory = new CircleFactory();
 		shapeFactory.createShape().draw();
 		shapeFactory = new RectangleFactory();
@@ -49,7 +49,7 @@ public class Test {
 		shapeFactory.createShape().draw();
 		
 		System.out.println("抽象工厂模式：");
-		IFactory factory = null;
+		IFactory factory = null;//一个接口，里面有多个方法
 		factory = new FactoryA();
 		factory.createCar().drive();
 		factory.createShape().draw();
